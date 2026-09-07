@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- External CSS -->
+    <link rel="stylesheet" href="style1.css">
+    <!-- Font Awesome for icons -->
+    <script src="https://kit.fontawesome.com/364635583a.js" crossorigin="anonymous"></script>
+    <title>iK TeCH Solutions</title>
+</head>
+
+<body>
+    <!-- Main Container -->
+    <div id="main-container" class="container">
+
+        <!-- Header Section -->
+        <div class="header-section">
+            
+            <!-- Logo -->
+            <div class="logo-section">
+                <img id="myLogo" src="./Images/logo2.png">
+            </div>
+
+            <!-- Cart Icon with Count -->
+            <div class="myCart" id="cart-icon">
+                <i class="fa-solid fa-cart-shopping"></i>
+                <span id="cart-count">0</span>
+            </div>
+
+            <!-- Navigation Links -->
+            <div id="nav-link" class="nav-container">
+                <a href="index.html">Intro</a>
+                <a href="about.html">About</a>
+                <a href="#productContainer">Shop</a>
+            </div>
+        </div>
+
+        <!-- Hero Section -->
+        <div class="hero-bg">
+            <div class="myWelcome">
+                <h3>iK TeCH Solutions</h3>
+                <p>Your one-stop destination for modern tech gadgets.</p>
+            </div>
+            <div class="hero-Image">
+                <img src="./Images/heroImage.png" width="">
+            </div>
+        </div>
+
+        <!-- Shop Button Section -->
+        <div class="shopButton-section">
+            <button class="shopButton" onclick="location.href='#productContainer'" class="shopNow">
+                Shop Now
+            </button>
+        </div>
+    </div>
+
+    <!-- Product Section -->
+    <div class="main-section">
+        <h3 class="product-section">OUR DURABLE PRODUCTS</h3>
+        <div id="productContainer" class="product-box"></div>
+    </div>
+
+    <!-- Cart Sidebar -->
+    <div class="cart-sidebar" id="cartSidebar">
+        <div class="cart-section">
+            
+            <!-- Close Cart Button -->
+            <button id="closeCart">X</button>
+
+            <!-- Cart Title -->
+            <h3 class="yourCart">Shopping Cart</h3>
+
+                 <!-- Cart Table -->
+            <table class="cart-table">
+                <thead>
+                    <tr>
+                        <th>S/N</th>
+                        <th>Item</th>
+                        <th>Price</th>
+                        <th>Qty</th>
+                        <th>Remove</th>
+                    </tr>
+                </thead>
+                <tbody class="cart-items"></tbody>
+            </table>
+
+           <!-- User Form -->
+       <form id="userForm">
+            <div class="user-form" style="margin-top: 20px;">
+                <input id="name" type="text" placeholder="Full Name" required>
+                <span id="nameError"></span><br>
+
+                <input id="phone" type="tel" placeholder="Phone Number" required>
+                <span id="phoneError"></span><br>
+
+                <input id="email" type="email" placeholder="Email Address" required>
+                <span id="emailError"></span>
+            </div>
+            <div class="cart-actions-wrapper">
+              
+
+       </form>
+
+
+            <!-- Cart Total -->
+            <h4 class="total">Total Amount: GH&cent; <span id="cart-total">0</span></h4>
+
+            <!-- Cart Action Buttons -->
+               <button id="checkoutBtn" type="submit" class="checkout-button">
+               Proceed to Checkout 
+              </button>
+
+            
+                <button id="continueShoppingBtn" class="continue-shopping-button" onclick="location.href='#productContainer'" >
+                   <i class="fa-solid fa-arrow-left"></i>
+                  Continue Shopping
+               </button>
+         </div>.
+
+    <div id="summaryModal" class="modal">
+        <div class="modal-content">
+            
+            <div id="purchaseSummary">
+                
+            </div>
+            <button onclick="closeSummary()">OK</button>
+            <button id="downloadBtn" onclick="printReceipt()">Print Receipt</button>
+        </div>
+    </div>
+
+
+
+         </div>
+    </div>
+
+   
+    <footer class="footer">
+    <div class="footer-container">  
+        <!-- Brand & About -->
+        <div class="footer-brand">
+            <img id="logo" src="./Images/logo2.png">
+            <h2 class="footer-logo">iK TeCH <span>Solutions</span></h2>
+        </div>
+        <p class="brand-desc">Your one-stop destination for premium modern tech gadgets.</p>
+
+        <!-- Quick Links -->
+        <nav class="footer-nav" aria-label="Footer Navigation">
+            <h3 class="footer-title">Explore</h3>
+            <ul class="nav-links">
+                <li><a href="index.html">Intro</a></li>
+                <li><a href="about.html">About</a></li>
+                <li> <a href="#productContainer">Shop</a></li>
+            </ul>
+        </nav>
+
+        <!-- Contact Info -->
+        <div class="footer-contact">
+            <h3 class="footer-title">Contact Us</h3>
+            <address class="contact-details">
+                <p><i class="fa-solid fa-location-dot"></i> Kumbungu, Ghana</p>
+                <p><a href="tel:+233555069917"><i class="fa-solid fa-phone"></i> +233 555 069 917</a></p>
+                <p><a href="mailto:info@iktechsolutions.com"><i class="fa-solid fa-envelope"></i> info@iktechsolutions.com</a></p>
+            </address>
+        </div>
+         
+        <!-- Social Media -->
+        <div class="footer-social">
+            <h3 class="footer-title">Follow Us</h3>
+            <div class="social-icons">
+                <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="https://wa.me/233555069917" target="_blank">
+                <i class="fa-brands fa-whatsapp"></i></a>
+
+                <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#" aria-label="TikTok"><i class="fa-brands fa-tiktok"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Copyright Bar -->
+    <div class="footer-bottom">
+        <p>&copy; 2026 iK TeCH Solutions. All Rights Reserved.</p> 
+    </div>
+</footer>
+
+         <!-- JavaScript File -->
+    <script src="./jav.js"></script>
+    <!-- Paystack SDK -->
+<script src="https://js.paystack.co/v1/inline.js"></script>
+</body>
+</html>
+.
